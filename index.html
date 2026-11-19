@@ -3,223 +3,138 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>A Little World For You ❤️</title>
-
+<meta name="theme-color" content="#160b13">
+<title>For Sristi, My Papaaaa ❤️</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
 <style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    background: #10090e;
-    color: #fff0f4;
-    font-family: Georgia, serif;
-    text-align: center;
-    overflow-x: hidden;
-}
-
-section {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 35px 22px;
-}
-
-h1 {
-    font-size: clamp(35px, 8vw, 60px);
-    color: #ffb5ca;
-    margin-bottom: 20px;
-}
-
-h2 {
-    color: #ffb5ca;
-    margin-bottom: 20px;
-}
-
-p {
-    font-size: 18px;
-    line-height: 1.9;
-    max-width: 600px;
-    color: #e8d5dd;
-}
-
-button {
-    background: #d65b83;
-    color: white;
-    border: none;
-    border-radius: 30px;
-    padding: 15px 30px;
-    font-size: 16px;
-    margin-top: 30px;
-    cursor: pointer;
-}
-
-button:hover {
-    background: #f17ba0;
-}
-
-.heart {
-    font-size: 65px;
-    animation: beat 1.2s infinite;
-    margin-bottom: 25px;
-}
-
-@keyframes beat {
-    50% { transform: scale(1.2); }
-}
-
-.card {
-    background: #25131e;
-    border: 1px solid #704052;
-    border-radius: 20px;
-    padding: 30px;
-    max-width: 600px;
-    width: 100%;
-}
-
-.hidden {
-    display: none;
-}
-
-footer {
-    padding: 25px;
-    color: #b995a5;
-}
+:root{--bg:#100911;--panel:#21131e;--rose:#f3a9c2;--rose2:#d96f98;--gold:#d9b98c;--text:#f8eaf0;--muted:#d4bac5}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 50% 0%,#392033 0%,#160d17 42%,#0c080d 100%);color:var(--text);font-family:"DM Sans",sans-serif;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.18;background-image:radial-gradient(#fff 0.7px,transparent .7px);background-size:37px 37px;z-index:-1}
+h1,h2,h3,.serif{font-family:"Playfair Display",serif}h1{font-size:clamp(2.6rem,8vw,5.7rem);line-height:1.05;margin:.3em 0;color:#ffd7e4}h2{font-size:clamp(2rem,5vw,3.3rem);color:#ffd7e4;margin:0 0 14px}p{line-height:1.85;color:var(--muted);font-size:1.02rem}.small{font-size:.78rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold)}
+section{padding:90px 20px;max-width:1100px;margin:auto}.center{text-align:center}.hero{min-height:100svh;display:flex;align-items:center;justify-content:center;flex-direction:column;padding:35px 20px;text-align:center}.hero .eyebrow{color:var(--gold);letter-spacing:.25em;text-transform:uppercase;font-size:.75rem}.hero p{max-width:580px;margin:15px auto 0}.glow-heart{font-size:3.4rem;filter:drop-shadow(0 0 22px #f16b9d);animation:pulse 1.7s infinite}@keyframes pulse{50%{transform:scale(1.14)}}.btn{border:1px solid #f0a3bd;background:linear-gradient(135deg,#e783a6,#bd527d);color:white;border-radius:999px;padding:14px 25px;font-weight:600;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;gap:8px;box-shadow:0 8px 30px #d45b8738;transition:.25s}.btn:hover{transform:translateY(-3px);box-shadow:0 12px 35px #d45b8760}.btn.secondary{background:#291925;border-color:#80536b;color:#ffd8e5}.hero .btn{margin-top:28px}.section-intro{max-width:650px;margin:0 auto 35px;text-align:center}
+.panel{background:linear-gradient(145deg,#2a1926eF,#1a101a);border:1px solid #70485d;border-radius:24px;padding:clamp(22px,5vw,42px);box-shadow:0 20px 70px #0005}
+.envelope-wrap{display:flex;justify-content:center;margin:32px auto 18px}.envelope{width:min(360px,85vw);height:220px;position:relative;border:0;background:linear-gradient(145deg,#a64c70,#58263f);border-radius:10px;cursor:pointer;box-shadow:0 18px 45px #0007;overflow:hidden}.envelope:before{content:"";position:absolute;inset:0;background:linear-gradient(145deg,transparent 49%,#77334f 50%),linear-gradient(35deg,transparent 49%,#8d3c5e 50%);z-index:2}.flap{position:absolute;top:0;left:0;width:100%;height:58%;background:#d17a99;clip-path:polygon(0 0,100% 0,50% 100%);transform-origin:top;transition:transform .8s;z-index:3}.seal{position:absolute;z-index:4;top:43%;left:50%;transform:translate(-50%,-50%);width:48px;height:48px;border-radius:50%;background:#f2c6d4;color:#8e3458;display:grid;place-items:center;font-size:1.4rem;box-shadow:0 3px 15px #0004}.envelope.open .flap{transform:rotateX(180deg);z-index:1}.letter{display:none;text-align:left;max-width:760px;margin:24px auto 0;animation:rise .8s ease both}.letter.show{display:block}@keyframes rise{from{opacity:0;transform:translateY(25px)}to{opacity:1;transform:none}}.letter p{color:#f1dce5}.signature{font-family:"Playfair Display",serif;font-style:italic;color:#ffd1e0;font-size:1.35rem}
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.photo{background:#f7e8e9;padding:9px 9px 34px;border-radius:5px;transform:rotate(var(--tilt));box-shadow:0 15px 35px #0007;transition:.3s}.photo:hover{transform:rotate(0) translateY(-7px) scale(1.025)}.photo img{width:100%;height:300px;object-fit:cover;display:block}.photo span{display:block;color:#633d50;text-align:center;font-family:"Playfair Display",serif;font-style:italic;padding-top:10px;font-size:.9rem}
+.reasons{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}.reason{min-height:115px;border:1px solid #75445e;background:#261722;border-radius:18px;color:#ffd8e5;font-size:1.6rem;cursor:pointer;transition:.25s}.reason:hover{background:#49243a;transform:translateY(-4px)}.reason small{display:block;font:500 .75rem "DM Sans";color:#e9b8cb;margin-top:8px}.reason-output{min-height:65px;margin-top:22px;color:#ffd6e3;font-family:"Playfair Display",serif;font-size:1.3rem}
+.timeline{max-width:700px;margin:auto;position:relative}.timeline:before{content:"";position:absolute;left:12px;top:5px;bottom:5px;width:2px;background:linear-gradient(var(--rose),var(--gold))}.moment{position:relative;padding:0 0 30px 45px}.moment:before{content:"❤";position:absolute;left:0;top:0;color:#f3a9c2;background:#281725;border:1px solid #d47b9b;border-radius:50%;width:26px;height:26px;display:grid;place-items:center;font-size:.7rem}.moment h3{margin:0;color:#ffd5e2;font-size:1.25rem}.moment p{margin:5px 0}
+.promise-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.promise{background:#271824;border:1px solid #71445c;color:#f7dce6;border-radius:14px;padding:18px;text-align:left;cursor:pointer}.promise span{display:block;color:#dcb0c2;font-size:.9rem;line-height:1.6;margin-top:10px}.promise span[hidden]{display:none}
+.music-box{max-width:600px;margin:auto}.music-box iframe{width:100%;height:152px;border:0;border-radius:14px}.music-note{font-size:.9rem}
+.final-card{max-width:720px;margin:auto;text-align:center}.final-heart{font-size:4rem;animation:pulse 1.6s infinite}.footer{text-align:center;padding:35px 20px;color:#b894a5;font-size:.85rem}
+.fade{opacity:0;transform:translateY(22px);transition:opacity .8s,transform .8s}.fade.visible{opacity:1;transform:none}.floating{position:fixed;bottom:-30px;color:#e98aaa;opacity:.55;pointer-events:none;animation:floatUp linear forwards;z-index:0}@keyframes floatUp{to{transform:translateY(-110vh) rotate(25deg);opacity:0}}
+@media(max-width:800px){.gallery{grid-template-columns:repeat(2,1fr)}.photo img{height:260px}.reasons{grid-template-columns:repeat(2,1fr)}.reason:last-child{grid-column:span 2}.promise-grid{grid-template-columns:1fr}}
+@media(max-width:420px){section{padding:70px 17px}.gallery{gap:10px}.photo{padding:6px 6px 25px}.photo img{height:210px}.photo span{font-size:.75rem}.envelope{height:190px}}
 </style>
 </head>
-
 <body>
+<header class="hero">
+  <div class="glow-heart">♡</div>
+  <div class="eyebrow">A little world made just for you</div>
+  <h1>For Sristi,<br><em>my Papaaaa</em></h1>
+  <p>Some things are easier to feel than to say. I made this little corner of the internet to say them with care.</p>
+  <a class="btn" href="#letter-section">A little something for you <span>♡</span></a>
+  <p style="font-size:.8rem;margin-top:30px">Take your time. There's no need to rush.</p>
+</header>
 
-<section id="welcome">
-    <div class="heart">❤️</div>
-
-    <h1>Hey, My Favourite Person</h1>
-
-    <p>
-        I made something for you.
-        Something that comes straight from my heart.
-    </p>
-
-    <button onclick="openHeart()">
-        Open My Heart ❤️
-    </button>
+<section id="letter-section" class="center fade">
+  <div class="section-intro"><div class="small">A letter from me to you</div><h2>Open when you're ready</h2><p>Tap the envelope. A few honest words are waiting inside.</p></div>
+  <div class="envelope-wrap"><button class="envelope" id="envelope" aria-label="Open the apology letter"><span class="flap"></span><span class="seal">♥</span></button></div>
+  <button class="btn secondary" id="open-letter">Open my letter</button>
+  <article class="panel letter" id="letter">
+    <div class="small">Dear Papaaaa,</div>
+    <p>I know I haven't always been the person you expected me to be. I know I've made mistakes, sometimes repeatedly, and haven't always met your expectations even when I should have tried harder.</p>
+    <p>I'm genuinely sorry for the moments when my actions disappointed you, when I didn't understand you properly, or when I made things harder instead of better. You deserved more care and thoughtfulness from me.</p>
+    <p>I don't want to keep saying sorry and then repeating the same mistakes. I want to listen better, understand you more, and let my actions show that I'm trying. I know that takes consistency, not just promises.</p>
+    <p>I'm not asking you to forget anything or pretend nothing happened. I only hope we can keep communicating honestly, understand each other a little better, and move forward at a pace that feels right for both of us.</p>
+    <p>You matter to me, Sristi. I'm sorry, Papaaaa. ❤️</p>
+    <div class="signature">With love, always.</div>
+  </article>
 </section>
 
-<section id="apology" class="hidden">
-
-    <h1>I'm Sorry.</h1>
-
-    <div class="card">
-        <p>
-            My love,
-
-            I know things haven't been perfect.
-            I know I may have hurt you, and I am
-            genuinely sorry for that.
-
-            I don't want to make excuses or pretend
-            that everything is okay.
-
-            You deserve love, respect, understanding
-            and effort. I want to do better, not
-            just say that I will.
-
-            I cannot change what has happened,
-            but I can take responsibility for it
-            and work on becoming better.
-
-            You mean more to me than these words
-            could ever explain.
-
-            I'm sorry, sweetheart. ❤️
-        </p>
-    </div>
-
-    <button onclick="showMemories()">
-        A Little More...
-    </button>
-
+<section class="fade" id="gallery-section">
+  <div class="section-intro"><div class="small">Little pieces of us</div><h2>Our photo corner</h2><p>Four moments I wanted to keep close. Every picture holds a memory only we can fully understand.</p></div>
+  <div class="gallery">
+    <div class="photo" style="--tilt:-2deg"><img src="images/memory-01.jpg" alt="A favourite photo together"><span>One of my favourite moments</span></div>
+    <div class="photo" style="--tilt:2deg"><img src="images/memory-02.jpg" alt="A sweet memory together"><span>A moment I want to remember</span></div>
+    <div class="photo" style="--tilt:-1deg"><img src="images/memory-03.jpg" alt="A lovely day together"><span>Just us, being us</span></div>
+    <div class="photo" style="--tilt:2deg"><img src="images/memory-04.jpg" alt="A happy moment together"><span>Keeping this close to my heart</span></div>
+  </div>
 </section>
 
-<section id="memories" class="hidden">
-
-    <h1>Our Little Universe ✨</h1>
-
-    <p>
-        Among all the ordinary days of my life,
-        you gave me some extraordinary memories.
-    </p>
-
-    <br>
-
-    <div class="heart">💗</div>
-
-    <p>
-        Every laugh, every conversation,
-        every little moment...
-
-        They all mean something to me.
-    </p>
-
-    <button onclick="showFinal()">
-        One Last Thing...
-    </button>
-
+<section class="fade center">
+  <div class="section-intro"><div class="small">A little list, just for you</div><h2>10 reasons I love you</h2><p>Tap each heart. These are little reminders, not a limit to all the reasons.</p></div>
+  <div class="reasons" id="reasons">
+    <button class="reason" data-message="Your smile can make an ordinary moment feel brighter.">♡<small>Reason 01</small></button>
+    <button class="reason" data-message="I love the way your laugh makes a moment feel lighter.">♡<small>Reason 02</small></button>
+    <button class="reason" data-message="I love the little things that make you uniquely you.">♡<small>Reason 03</small></button>
+    <button class="reason" data-message="I love the memories we've made, big and small.">♡<small>Reason 04</small></button>
+    <button class="reason" data-message="I love how even simple conversations with you can matter so much.">♡<small>Reason 05</small></button>
+    <button class="reason" data-message="I admire the person you are and the person you're becoming.">♡<small>Reason 06</small></button>
+    <button class="reason" data-message="I love your little expressions and habits.">♡<small>Reason 07</small></button>
+    <button class="reason" data-message="I love that there's always something new to learn about you.">♡<small>Reason 08</small></button>
+    <button class="reason" data-message="I love the comfort of sharing a moment with you.">♡<small>Reason 09</small></button>
+    <button class="reason" data-message="Most of all, I love you for being Sristi — my Papaaaa.">♡<small>Reason 10</small></button>
+  </div>
+  <div class="reason-output" id="reason-output" aria-live="polite">Choose a heart to reveal a reason. ♡</div>
 </section>
 
-<section id="final" class="hidden">
-
-    <div class="heart">🫶</div>
-
-    <h1>We Can Move Forward</h1>
-
-    <p>
-        Not by forgetting everything,
-        but by understanding each other better.
-
-        I don't expect an answer immediately.
-        I just wanted you to know how I feel.
-    </p>
-
-    <button onclick="answer()">
-        Send You A Hug ❤️
-    </button>
-
-    <p id="response" style="margin-top:25px;"></p>
-
+<section class="fade">
+  <div class="section-intro"><div class="small">A few moments along the way</div><h2>Our little timeline</h2><p>Not a perfect story. A real one, made of moments worth remembering.</p></div>
+  <div class="timeline">
+    <div class="moment"><h3>The beginning</h3><p>The day our story started becoming ours. Add your date or the detail you remember most.</p></div>
+    <div class="moment"><h3>A favourite memory</h3><p>One of those moments when you looked at each other and couldn't help smiling.</p></div>
+    <div class="moment"><h3>A moment to keep</h3><p>A day, a place, a silly joke, or a small thing that became special.</p></div>
+    <div class="moment"><h3>Still learning, still growing</h3><p>Today isn't about pretending to be perfect. It's about choosing honesty, care and effort.</p></div>
+  </div>
 </section>
 
-<footer>
-    Made with love, just for you. ❤️
-</footer>
+<section class="fade">
+  <div class="section-intro"><div class="small">Not just words</div><h2>Promises I want to practise</h2><p>Tap each card to open it. These are commitments I want to show through my actions.</p></div>
+  <div class="promise-grid">
+    <button class="promise">♡ I will listen more<span hidden>I will try to understand what you're saying before reacting or assuming.</span></button>
+    <button class="promise">♡ I will own my mistakes<span hidden>I won't hide behind excuses. I'll acknowledge when I've hurt or disappointed you.</span></button>
+    <button class="promise">♡ I will be more consistent<span hidden>I want my effort to show in everyday actions, not only in emotional moments.</span></button>
+    <button class="promise">♡ I will respect your feelings<span hidden>You can be honest with me. I will make room for your feelings and your pace.</span></button>
+    <button class="promise">♡ I will communicate clearly<span hidden>If something is wrong, I'll try to talk about it calmly instead of letting it grow.</span></button>
+    <button class="promise">♡ I will keep learning<span hidden>I know change takes time. I'll keep working on myself rather than expecting one apology to fix everything.</span></button>
+  </div>
+</section>
 
+<section class="fade center">
+  <div class="section-intro"><div class="small">Our song</div><h2>A little music for you</h2><p>Perfect — Ed Sheeran</p></div>
+  <div class="panel music-box">
+    <div style="font-size:2rem;margin-bottom:10px">♫</div>
+    <p class="music-note">Press play below if you'd like to listen. Music may take a moment to load.</p>
+    <iframe title="Perfect by Ed Sheeran on Spotify" src="https://open.spotify.com/embed/track/0tgVpDi06FyKpA1z0VMD4v?utm_source=generator" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    <p class="music-note">You can also listen on <a href="https://open.spotify.com/track/0tgVpDi06FyKpA1z0VMD4v" target="_blank" rel="noopener" style="color:#f3a9c2">Spotify</a>.</p>
+  </div>
+</section>
+
+<section class="fade">
+  <div class="panel final-card">
+    <div class="final-heart">♡</div>
+    <div class="small">One last thing, Papaaaa</div>
+    <h2>We Can Move Forward</h2>
+    <p>Not by pretending every mistake didn't happen, but by learning from them. I don't expect an answer right now, and I won't ask you to rush. I just want to keep showing you, through patience and actions, that you matter to me.</p>
+    <p class="serif" style="font-size:1.35rem;color:#ffd6e3;font-style:italic">Thank you for being you, Sristi.</p>
+    <button class="btn" id="surprise">A little final surprise ♡</button>
+    <p id="surprise-message" aria-live="polite" style="margin-bottom:0"></p>
+  </div>
+</section>
+<footer class="footer">Made with care, for Sristi — my Papaaaa. ♡</footer>
 <script>
-
-function openHeart() {
-    document.getElementById("welcome").style.display="none";
-    document.getElementById("apology").classList.remove("hidden");
-}
-
-function showMemories() {
-    document.getElementById("apology").style.display="none";
-    document.getElementById("memories").classList.remove("hidden");
-}
-
-function showFinal() {
-    document.getElementById("memories").style.display="none";
-    document.getElementById("final").classList.remove("hidden");
-}
-
-function answer() {
-    document.getElementById("response").innerHTML =
-    "Sending you the biggest hug. ❤️";
-}
-
+const envelope=document.getElementById('envelope');
+const letter=document.getElementById('letter');
+function openLetter(){envelope.classList.add('open');letter.classList.add('show');document.getElementById('open-letter').textContent='My letter is open ♡';}
+envelope.addEventListener('click',openLetter);
+document.getElementById('open-letter').addEventListener('click',openLetter);
+document.querySelectorAll('.reason').forEach(btn=>btn.addEventListener('click',()=>{document.getElementById('reason-output').textContent=btn.dataset.message;}));
+document.querySelectorAll('.promise').forEach(btn=>btn.addEventListener('click',()=>{const span=btn.querySelector('span');span.hidden=!span.hidden;}));
+document.getElementById('surprise').addEventListener('click',()=>{document.getElementById('surprise-message').innerHTML='If I could give you one thing, it would be the chance to see yourself through my eyes — and understand how special you are to me. ❤️';burstHearts();});
+const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target);}}),{threshold:.12});
+document.querySelectorAll('.fade').forEach(el=>observer.observe(el));
+function burstHearts(){for(let i=0;i<18;i++){const h=document.createElement('span');h.className='floating';h.textContent=['♡','♥','✦'][i%3];h.style.left=(Math.random()*100)+'vw';h.style.animationDuration=(4+Math.random()*4)+'s';h.style.fontSize=(14+Math.random()*20)+'px';document.body.appendChild(h);setTimeout(()=>h.remove(),8500);}}
+setInterval(()=>{const h=document.createElement('span');h.className='floating';h.textContent=Math.random()>.5?'♡':'✦';h.style.left=(Math.random()*100)+'vw';h.style.animationDuration=(8+Math.random()*5)+'s';h.style.fontSize=(12+Math.random()*12)+'px';document.body.appendChild(h);setTimeout(()=>h.remove(),14000);},1800);
 </script>
-
-</body>
-</html>
+</body></html>
